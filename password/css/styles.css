@@ -1,0 +1,38 @@
+body {
+    background: navy;
+    color: rgb(50, 50, 50);
+}
+
+.back {
+    border: 5px lightskyblue solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.field {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.userEamil {
+    width: 50px;
+}
+
+.inputTitle {
+    padding-left: 20%;
+}
+
+.notify {
+    height: 20%;
+}
+
+.destination{
+    height: 100%;
+    width: 100%;
+    border: 5px lightskyblue solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+

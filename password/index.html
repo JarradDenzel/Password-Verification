@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Password</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="start">
+            <div class="col-sm-3"></div>
+            <div style = "margin-right: auto; margin-left: auto; margin-top: 10%;" class="col-sm-6 back">
+                <h1 style="text-align: center; color: navy;">Register</h1>
+                <form id="format">
+                    <div class="inputTitle">Email:</div>
+                    <div class="field"><input style="border:gray 1px solid; border-radius: 20px;" size="50" height="50" id="userEmail" class="userEmail" type="email" name="Email" id=""></div>
+                    <div class="inputTitle">Password:</div>
+                    <div class="field"><input min="8" max="20" style="border:gray 1px solid; border-radius: 20px;" size="50"  id="userPassword" class="userPassword" type="password"></div> 
+                    <div class="inputTitle">Confirm Password:</div>
+                    <div class="field"><input style="border:gray 1px solid; border-radius: 20px;" size="50" id="userConfirmation" class="userConfirmation" type="password"></div> 
+                    <!-- <input type="checkbox" onclick="Toggle()"> -->
+                    <div class="field"><button style="background:lightcoral; border-radius: 20px;" type="submit">Submit</button></div>
+                </form>
+                <div id="rules">
+                    <ul style = "list-style: circle;">
+                        <li id="lengthRule">Must have at least 8 characters but no more than 20</li>
+                        <li id="characterRule">Must contain at least one special charcter(!, @, #, $, %, &)</li>
+                        <li id="uppercaseRule">Must contain at least one uppercase letter</li>
+                        <li id="lowercaseRule">Must contain at least one lowercase letter</li>
+                        <li id="numberRule">Must contain at least one number</li>
+                        <li id="spaceRule">Cannot contain spaces</li>
+                        <li id="matchRule">Passwords must match</li>
+                    </ul>
+                </div>
+                <div class="notify" style="text-align: center; margin-bottom: 3%; font-size: 36px; color: navy"><span id="message"></span></div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row " id="finish" >
+            <div class="col-sm-12 destination">
+                Destination
+            </div>
+        </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
